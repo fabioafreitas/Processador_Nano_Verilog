@@ -81,46 +81,32 @@ module ctrl ( 	estado,
 					  
 							    end
 					  opADD:begin 
-								  CmdULA <= cmdADD; //envia comando para ula efetuar a operação ADD
-								  SelRegWr <=1'b0; //multiplexador libera o canal para o endereco de escrita 
-								  selDtWr <=2'b00; // multiplexador libera o canal para o dado da ula passe para porta de escrita do banco resgustrador
-								  Wr <= 1'b1; // envia o sinal ativo para escrever no banco registrador 
+								  CmdULA <= cmdADD;//envia comando para ula efetuar a operação ADD
+								  Wr <= 1'b1; 		 // envia o sinal ativo para escrever no banco registrador 
 							   end
 					  opAND:begin
 					           CmdULA <= cmdAND;//envia comando para ula efetuar a operação AND
-					           SelRegWr <=1'b0;
-								  selDtWr <=2'b00;
 								  Wr <= 1'b1; 
 								end
 								
 					  opOR :begin
 					           CmdULA <= cmdOR; //envia comando para ula efetuar a operação OR
-					           SelRegWr <=1'b0;
-								  selDtWr <=2'b00;
 								  Wr <= 1'b1;
 								end
 					  opSUB:begin
 					           CmdULA <= cmdSUB; //envia comando para ula efetuar a operação SUB
-					           SelRegWr <=1'b0;
-								  selDtWr <=2'b00;
 								  Wr <= 1'b1; 
 								end
 					  opNEG:begin
 					           CmdULA <= cmdNEG; //envia comando para ula efetuar a operação NEG
-					           SelRegWr <=1'b0;
-								  selDtWr <=2'b00;
 								  Wr <= 1'b1;
 								end
 					  opNOT:begin
 					           CmdULA <= cmdNOT; //envia comando para ula efetuar a operação NOT
-					           SelRegWr <=1'b0;
-								  selDtWr <=2'b00;
 								  Wr <= 1'b1; 
 								end
 					  opCPY:begin
 					           CmdULA <= cmdTSTR1;
-					           SelRegWr <=1'b0;
-								  selDtWr <= 2'b00;
 								  Wr <= 1'b1;
 								end  
 					  opLRG: begin
@@ -128,80 +114,17 @@ module ctrl ( 	estado,
 					            selDtWr <= 2'b01; //
 									Wr <= 1'b1;
 								end
-					  opBLT: // tipo desvio 
-								begin
-								CmdULA <= cmdTSTR1;
-								if (ResultULA[7]==1)
-									begin 
-									SelDesv <= 1'b1; 
-									SelJMP <= 1'b0;
-									end
-								else
-								   begin
-								   SelDesv <= 1'b0;
-								   SelJMP <=  1'b0;
-								
-								  end
-								end
- 					  opBGT:
-								begin
-								CmdULA <= cmdTSTR1;
-								if (ResultULA[7]==0)
-									begin 
-									SelDesv <= 1'b1; 
-									SelJMP <= 1'b0;
-									end
-								else
-								   begin
-								   SelDesv <= 1'b0;
-									SelJMP <=  1'b0;
-								   end
-							   	
-							
-						    	end
-					  opBEQ: begin
-								CmdULA <= cmdTSTR1;
-								if (ResultULA==0)
-									begin 
-									SelDesv <= 1'b1; 
-									SelJMP <= 1'b0;
-									end
-								else
-								  begin
-								   SelDesv <= 1'b0;
-									SelJMP <=  1'b0;
-								
-								  end
-								end
-					  opBNE: begin
-									CmdULA <= cmdTSTR1;
-								if (ResultULA != 0)
-									begin 
-									SelDesv <= 1'b1; 
-									SelJMP <= 1'b0;
-									end
-								else
-								  begin
-								   SelDesv <= 1'b0;
-									SelJMP <=  1'b0;
-								
-								  end
-					         
-					            
-							   end		
-					  opJMP: begin
-					           SelJMP  <= 1'b1;
-								end
-					  opINPUT:begin
-					          SelRegWr <=1'b0;
-								 selDtWr <= 2'b10;
-								 Wr <=1'b1;
-								 end
-					  
+					  opBLT:;
+ 					  opBGT:;
+					  opBEQ:;
+					  opBNE:;	
+					  opJMP:;
+					  opINPUT:; // dúvida
 					  opOUTPUT:begin
 								  CmdULA <= cmdTSTR1;
 								  selDtWr <= 0;
-								  end 		
+								  end
+						default:;
 					endcase  
 				   estado <= 3'd3; //
 				 end
@@ -212,7 +135,11 @@ module ctrl ( 	estado,
 //					estado <= 3'd4; 
 					case (OP)
 			        opJMP: SelJMP <= 1'b1;
+					  opBLT: SelDesv <= (ResultULA[7] == 8'd1 ? 1'b1 : 1'b0);
+					  opBGT: SelDesv <= (ResultULA[7] == 8'd0 ? 1'b1 : 1'b0);
 					  opBEQ: SelDesv <= (ResultULA == 8'd0 ? 1'b1 : 1'b0);
+					  opBNE: SelDesv <= (ResultULA != 8'd0 ? 1'b1 : 1'b0);
+					  opINPUT:; // dúvida
 					  opOUTPUT:  LdOUTPUT <= 1'b1; 
 					  default: begin
 									 SelJMP = 0;

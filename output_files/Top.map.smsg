@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at debounce.v(4): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ctrl.v(52): always construct contains both blocking and non-blocking assignments

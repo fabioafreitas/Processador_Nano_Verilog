@@ -1,6 +1,3 @@
-// tira a replicação da tecla ao ser pressionada
-// este módulo evita que isto ocorra e faz com que a tecla pressionada gere apenas um sinal por clique
-
 module debounce(input clk, input chave, output reg sinal);
    reg [19:0]cnt;
 	reg chTemp;

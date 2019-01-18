@@ -1,5 +1,3 @@
-//
-
 module divClk(input clk_in, input [25:0] divisor, output reg clk_out);
 reg [25:0] cnt;
   always @ (posedge clk_in)

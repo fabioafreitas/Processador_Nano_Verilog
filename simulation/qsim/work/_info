@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Abner\Documents\Rural\2016-1\Circuitos_Digitais\Projetos da Disciplina\Nano\simulation\qsim
+vprocessador
+Z1 !s100 Ll:?VfWKWX;h4;2>zf1Mj1
+Z2 InTRNc7oQi5Cng1Jo0L?_Q2
+Z3 VMJeA[9kLcfk6R[HURBaR:1
+Z4 dD:\UFRPE\CIRCUITOS\Projeto Nano\simulation\qsim
+Z5 w1466067558
+Z6 8Top.vo
+Z7 FTop.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Top.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1547687822.020000
+Z12 !s107 Top.vo|
+!s101 -O0
+vprocessador_vlg_check_tst
+!i10b 1
+Z13 !s100 CgF=A=Fbn54<m5:c_UK=:0
+Z14 I3<Z5T?V]h_jmIkedKRF_T2
+Z15 V3HBBHbUaAToK2LJmkl87A0
+R4
+Z16 w1547687820
+Z17 8Nano.vt
+Z18 FNano.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1547687822.187000
+Z20 !s107 Nano.vt|
+Z21 !s90 -work|work|Nano.vt|
+!s101 -O0
+R10
+vprocessador_vlg_sample_tst
+!i10b 1
+Z22 !s100 U`1N_9cOC77:33_izkDfa1
+Z23 IKbZK5GaF6Lj=^<MZ]4mKV1
+Z24 VJ6hfJ[]8hZ8_P^6I_MJ4H1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vprocessador_vlg_vec_tst
+!i10b 1
+Z25 !s100 87EHS2hi1@GBiPMoFnFY`3
+Z26 I_No>zA5?_b922gzd<nSdM0
+Z27 VTHSaPDKg4Wj>2_O^anzBd2
+R4
+R16
+R17
+R18
+Z28 L0 1864
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vprocessadorSch
+Z29 !s100 ;fObd[2YH63?5Y>3DHgK80
+Z30 I2:Y;SgIJZGSQ39V>O[>1C0
+Z31 V@YoMR0UAeK=?ZDg[khjQC0
+Z32 dC:\Users\Abner\Documents\Rural\2016-1\Circuitos_Digitais\Projetos da Disciplina\Nano\simulation\qsim
+Z33 w1466037991
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z34 nprocessador@sch
+Z35 !s108 1466037994.481000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vprocessadorSch_vlg_check_tst
+Z36 !s100 leM0gIEN?JME8gOaFnLB73
+Z37 I5mU8c_zkE`b8`]TAHTP5B3
+Z38 VLUEW[k;:IjFCdCjhg:dVi2
+R32
+Z39 w1466037990
+Z40 8Top.vt
+Z41 FTop.vt
+L0 59
+R8
+r1
+31
+Z42 !s108 1466037995.007000
+Z43 !s107 Top.vt|
+Z44 !s90 -work|work|Top.vt|
+R10
+Z45 nprocessador@sch_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vprocessadorSch_vlg_sample_tst
+Z46 !s100 ECK1ZXCcg?6]QfVhZOzZa2
+Z47 IRO[9iDYb_hM@`NOeL:TVV1
+Z48 VT=GPLafm:@:RNamkcfmFZ0
+R32
+R39
+R40
+R41
+L0 29
+R8
+r1
+31
+R42
+R43
+R44
+R10
+Z49 nprocessador@sch_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vprocessadorSch_vlg_vec_tst
+Z50 !s100 aF<T?YF@LA^Z^b08<ok4g2
+Z51 IV;nWodg`Aj^WR`7?j=`1`3
+Z52 Vn7EmJnAd[7SPMWf[cCnVe2
+R32
+R39
+R40
+R41
+Z53 L0 645
+R8
+r1
+31
+R42
+R43
+R44
+R10
+Z54 nprocessador@sch_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0

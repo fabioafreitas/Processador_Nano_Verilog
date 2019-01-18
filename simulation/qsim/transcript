@@ -1,0 +1,156 @@
+# do Nano.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processador
+# 
+# Top level modules:
+# 	processador
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processador_vlg_sample_tst
+# -- Compiling module processador_vlg_check_tst
+# -- Compiling module processador_vlg_vec_tst
+# 
+# Top level modules:
+# 	processador_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.processador_vlg_vec_tst 
+# Loading work.processador_vlg_vec_tst
+# Loading work.processador
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
+# Loading work.processador_vlg_sample_tst
+# Loading work.processador_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ERROR! Vector Mismatch for output port dadoMemoria[9] :: @time = 105000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111001000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[12] :: @time = 105000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111001000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[13] :: @time = 105000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111001000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[14] :: @time = 105000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111001000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[15] :: @time = 105000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111001000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[10] :: @time = 110000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111010000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[0] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[1] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[2] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[3] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[4] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[5] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[6] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[7] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[8] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[11] :: @time = 155000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[9] :: @time = 190000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111100000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[10] :: @time = 190000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 1111100000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[11] :: @time = 205000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111100000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[9] :: @time = 230000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111101000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[11] :: @time = 270000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0001001010011000
+# ERROR! Vector Mismatch for output port dadoMemoria[13] :: @time = 270000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0001001010011000
+# ERROR! Vector Mismatch for output port dadoMemoria[14] :: @time = 270000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0001001010011000
+# ERROR! Vector Mismatch for output port dadoMemoria[15] :: @time = 270000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0001001010011000
+# ERROR! Vector Mismatch for output port dadoMemoria[3] :: @time = 305000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 0001001010011000
+# ERROR! Vector Mismatch for output port dadoMemoria[4] :: @time = 305000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 0001001010011000
+# ERROR! Vector Mismatch for output port dadoMemoria[7] :: @time = 305000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 0001001010011000
+# ERROR! Vector Mismatch for output port dadoMemoria[10] :: @time = 310000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[13] :: @time = 310000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[14] :: @time = 310000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[15] :: @time = 310000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 1111011000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[3] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[4] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[7] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[9] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[10] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[12] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[13] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[14] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port dadoMemoria[15] :: @time = 355000.000 ps
+#      Expected value = 1111111111111111
+#      Real value = 0000000000000000
+#          40 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Nano.vt(1860)
+#    Time: 500 ns  Iteration: 0  Instance: /processador_vlg_vec_tst/tb_out
